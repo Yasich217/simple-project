@@ -6,11 +6,9 @@
     "jsx": "react",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "outDir": "dist"
+    "experimentalDecorators": true
   },
   "exclude": [
-    "dist",
     "node_modules"
   ]
 }

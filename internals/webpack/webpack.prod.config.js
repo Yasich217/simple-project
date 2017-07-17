@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = require('./webpack.shared.config')({
   entry: [
-    path.join(process.cwd(), 'client/index.js'),
+    path.join(process.cwd(), 'development/src/index.js'),
   ],
 
   output: {
@@ -21,7 +21,7 @@ module.exports = require('./webpack.shared.config')({
     }),
 
     new HtmlWebpackPlugin({
-      template: 'client/index.html',
+      template: 'development/src/index.html',
       minify: {
         removeComments: true,
         collapseWhitespace: true,

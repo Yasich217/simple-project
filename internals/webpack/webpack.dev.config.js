@@ -16,7 +16,7 @@ module.exports = require('./webpack.shared.config')({
   // Add hot reloading in development
   entry: [
     'webpack-hot-middleware/client',
-    path.join(process.cwd(), 'client/index.js'),
+    path.join(process.cwd(), 'development/src/index.js'),
   ],
 
   output: {
@@ -42,6 +42,6 @@ module.exports = require('./webpack.shared.config')({
 
 function templateContent() {
   return fs.readFileSync(
-    path.resolve(process.cwd(), 'client/index.html')
+    path.resolve(process.cwd(), 'development/src/index.html')
   ).toString();
 }

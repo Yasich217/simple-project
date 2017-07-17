@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const chalk = require('chalk');
 const cp = require('child_process');
-const buildDir = path.resolve(process.cwd(), 'build');
+const buildDir = path.resolve(process.cwd(), 'development/build');
 const isProd = process.env.NODE_ENV === 'production'
 
 if (!fs.existsSync(buildDir)) {

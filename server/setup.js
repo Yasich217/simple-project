@@ -18,10 +18,10 @@ module.exports = function (options) {
   }
 
   // serve the static assets
-  app.use("/_assets", express.static(path.join(__dirname, "..", "build", "public"), {
+  app.use("/_assets", express.static(path.join(__dirname, "..", "development/build", "development/public"), {
     maxAge: "200d" // We can cache them as they include hashes
   }));
-  app.use("/", express.static(path.join(__dirname, "..", "public"), {
+  app.use("/", express.static(path.join(__dirname, "..", "development/public"), {
   }));
 
   app.get("/*", function(req, res) {
@@ -79,7 +79,7 @@ function addDevMiddlewares(app, webpackConfig) {
 
 function addProdMiddlewares(app, options) {
   const publicPath = options.publicPath || '/';
-  const outputPath = options.outputPath || path.resolve(process.cwd(), 'build');
+  const outputPath = options.outputPath || path.resolve(process.cwd(), 'development/build');
 
   app.use(compression());
   app.use(publicPath, express.static(outputPath));
