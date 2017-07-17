@@ -2,8 +2,11 @@
   "name": "simple-project",
   "version": "1.0.0",
   "description": "simple project from React, Redux, and TypeScript",
-  "main": "index.js",
+  "main": "test-setup.js",
   "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.config.js --progress --profile --colors",
+    "start": "cross-env NODE_ENV=development node server",
+    "start:prod": "cross-env NODE_ENV=production node server",
     "test": "-"
   },
   "repository": {
@@ -20,7 +23,8 @@
   "bugs": {
     "url": "https://github.com/Yasich217/simple-project/issues"
   },
-  "homepage": "https://github.com/Yasich217/simple-project#readme","dependencies": {
+  "homepage": "https://github.com/Yasich217/simple-project#readme",
+  "dependencies": {
     "axios": "0.16.2",
     "classnames": "2.2.5",
     "concurrently": "3.4.0",
