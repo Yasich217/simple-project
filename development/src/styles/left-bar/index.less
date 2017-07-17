@@ -1,0 +1,48 @@
+.left-nav{
+
+}
+.left-nav ul{
+    display:block;
+    position:relative;
+    z-index: 999;
+}
+.left-nav ul li{
+    display:block;
+    position:relative;
+    z-index: 999;
+}
+.left-nav ul li a{
+    position:relative;
+    display:block;
+    color:#FBF7F7;
+    padding:5px;
+    background:#3A9CD3;
+    z-index: 999;
+}
+
+.left-nav ul li a:hover, .left-nav ul li:hover a{
+    background:#0A3CC1;
+    z-index: 999;
+}
+.left-nav ul li ul{
+    position:absolute;
+    top:0px;
+    left:100%;
+    display:none;
+    width:150px;
+    z-index: 999;
+}
+
+.left-nav ul li:hover > ul{
+    display:block;
+    z-index: 999;
+}
+.left-nav ul li ul li a{
+    padding:5px;
+    z-index: 999;
+}
+.left-nav ul li ul li a:hover, .left-nav ul li ul li:hover > a{
+    background:#75C1D4;
+    color:#0A3CC1;
+    z-index: 999;
+}

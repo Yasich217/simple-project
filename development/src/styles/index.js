@@ -1,1 +1,1 @@
-import './main.less';
+import './app.less';
