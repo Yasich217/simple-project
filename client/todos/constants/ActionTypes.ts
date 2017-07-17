@@ -1,0 +1,3 @@
+export const SUCCESS_REQUEST = 'SUCCESS_REQUEST';
+export const BEGIN_REQUEST = 'BEGIN_REQUEST';
+export const CLEAR_QUERY = 'CLEAR_QUERY';
