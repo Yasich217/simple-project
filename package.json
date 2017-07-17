@@ -1,0 +1,24 @@
+{
+  "name": "simple-project",
+  "version": "1.0.0",
+  "description": "simple project from React, Redux, and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "-"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yasich217/simple-project.git"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "TypeScript"
+  ],
+  "author": "Yaroslav Kazarin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yasich217/simple-project/issues"
+  },
+  "homepage": "https://github.com/Yasich217/simple-project#readme"
+}
