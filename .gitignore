@@ -1,8 +1,7 @@
 .vscode/
 .idea/
-build/
+development/build/
 node_modules/
 npm-debug.log
 tmp/
-dist/
 .sw[a-z]
