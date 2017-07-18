@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/left-bar/index.less';
 
 interface IProps {
@@ -25,102 +26,44 @@ class LeftBar extends React.Component<IProps, IState> {
                 {
                     id: 1,
                     name: 'Фильмы',
-                    link: '/1',
-                    sub: [
-                        {
-                            id: 1,
-                            name: 'По жанрам',
-                            link: '/1',
-                            sub: [
-                                {
-                                    id: 1,
-                                    name: 'Ужасы',
-                                    link: '/1'
-                                },
-                                {
-                                    id: 2,
-                                    name: 'Триллер',
-                                    link: '/1'
-                                },
-                                {
-                                    id: 3,
-                                    name: 'Сопли',
-                                    link: '/1'
-                                },
-                            ]
-                        },
-                        {
-                            id: 2,
-                            name: 'По сборам',
-                            link: '/1'
-                        },
-                        {
-                            id: 3,
-                            name: 'По популярности',
-                            link: '/1'
-                        }
-                    ]
+                    link: '/movies/',
                 },
                 {
                     id: 2,
                     name: 'Избранное',
-                    link: '/2'
+                    link: '/favorites/'
                 },
                 {
                     id: 3,
                     name: 'Просмотренное',
-                    link: '/3'
+                    link: '/watched/'
                 },
                 {
                     id: 4,
                     name: 'Мои списки',
-                    link: '/4',
+                    link: '/lists/',
                     sub: [
                         {
                             id: 1,
                             name: 'Нужно посмотреть',
-                            link: '/1'
+                            link: '/lists/1/'
                         },
                         {
                             id: 2,
                             name: 'Посоветовать',
-                            link: '/2',
-                            sub: [
-                                {
-                                    id: 1,
-                                    name: 'Друзьям',
-                                    link: '/1'
-                                },
-                                {
-                                    id: 2,
-                                    name: 'Врагам',
-                                    link: '/2',
-                                    sub: [
-                                        {
-                                            id: 1,
-                                            name: 'Фильмы',
-                                            link: '/1'
-                                        },
-                                        {
-                                            id: 2,
-                                            name: 'Избранное',
-                                            link: '/2'
-                                        },
-                                        {
-                                            id: 3,
-                                            name: 'Просмотренное',
-                                            link: '/3'
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            id: 3,
-                            name: 'Говно',
-                            link: '/3'
+                            link: '/lists/2/',
                         }
                     ]
+                },
+                {
+                    id: 5,
+                    name: 'Мой профиль',
+                    link: '/profile/',
+                },
+                {
+                    id: 6,
+                    name: 'Выйти',
+                    link: '/logout/',
                 }
             ]
         };
@@ -131,11 +74,11 @@ class LeftBar extends React.Component<IProps, IState> {
             items.map(item => {
                 return (
                     <li key = {item.id}>
-                        <a href = {item.link} >{item.name}</a>
+                        <Link to = {item.link}>{item.name}</Link>
                         {(item.sub) ? this.renderItems(item.sub) : ''}
                     </li>
-                );}) 
-            }</ul>;
+            );  })
+        }</ul>;
     }
 
     render() {
