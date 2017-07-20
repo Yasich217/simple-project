@@ -1,0 +1,31 @@
+{
+  "en": {
+    "translation": {
+      "common": {
+        "button": {
+          "save": "save",
+          "cancel": "cancel",
+          "update": "update",
+          "login": "log in",
+          "reg": "register"
+        },
+        "field": {
+          "login": "Login",
+          "password": "Password",
+          "confirmPassword": "Confirm password",
+          "email": "Email",
+          "name": "Name",
+          "auth": "Authorization",
+          "reg": "Registration",
+          "error": {
+            "empty": "The field can not be empty",
+            "required": "Required field",
+            "minLength": "Must be at least characters",
+            "maxLength": "Must be at most characters",
+            "incorrectEmail": "Incorrect e-mail"
+          }
+        }
+      }
+    }
+  }
+}
