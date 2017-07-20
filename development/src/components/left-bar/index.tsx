@@ -84,7 +84,7 @@ class LeftBar extends React.Component<IProps, IState> {
     render() {
         return (
             <div className = 'left-bar fl_l' >
-                <nav className = 'left-nav'>{this.renderItems(this.state.items)}</nav>
+                <nav className = 'left-nav'>{ /*this.renderItems(this.state.items) */}</nav>
             </div>
         );
     }
